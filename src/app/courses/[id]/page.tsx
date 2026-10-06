@@ -185,7 +185,6 @@ export default async function CoursePage({ params }: { params: Promise<{ id: str
                       <button className={`${btnPrimary} w-full py-3`}>{t.courses.enroll}</button>
                     </form>
                   ) : (
-                  ) : (
                     <div className="mt-5 space-y-2">
                       <LinkButton href="/login" className="w-full py-3">{t.nav.login}</LinkButton>
                       <LinkButton href="/register" variant="secondary" className="w-full">{t.nav.register}</LinkButton>
