@@ -51,9 +51,9 @@ export default async function AdminDashboard() {
 
       {/* Pending Approvals */}
       <section className="mt-10">
-        <h2 className="text-xl font-bold text-slate-900">{t.admin.pendingApprovals}</h2>
+        <h2 className="text-xl font-bold text-slate-900">Pending Approvals</h2>
         {pendingEnrollments.length === 0 ? (
-          <Card className="mt-4 p-6 text-sm text-slate-500">{t.admin.noPending}</Card>
+          <Card className="mt-4 p-6 text-sm text-slate-500">No pending enrollments found.</Card>
         ) : (
           <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {pendingEnrollments.map((p) => (
