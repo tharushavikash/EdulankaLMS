@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Noto Sans Sinhala", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Iskoola Pota", "Nirmala UI", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:lang(si) {
+  font-family: "Noto Sans Sinhala", "Inter", "Iskoola Pota", "Nirmala UI", system-ui, sans-serif;
+  line-height: 1.7;
+}
+
+.yt-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #0f172a;
+}
+
+.yt-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.4s ease-out both;
+}
